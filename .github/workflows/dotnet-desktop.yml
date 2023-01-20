@@ -67,6 +67,6 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Restore dependencies
-      run: dotnet restore sample\ tests/sample\ tests
+      run: dotnet restore "sample tests/sample tests"
     - name: Run Test
-      run: dotnet test --verbosity normal sample\ tests/sample\ tests
+      run: dotnet test --verbosity normal "sample tests/sample tests"
